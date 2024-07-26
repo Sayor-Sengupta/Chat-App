@@ -13,10 +13,10 @@ const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve()
 const corsOptions = {
     
-    origin: 'https://chat-app-t9pg.onrender.com', // Your frontend URL
+    origin: 'http://localhost:3000', // Your frontend URL
     credentials: true, // Allow credentials (cookies, authorization headers, TLS client certificates)
   };
-
+dotenv.config()
 // app.use(cors());
 app.use(cors(corsOptions));
 app.use(express.json());// to parse json , from req.body
