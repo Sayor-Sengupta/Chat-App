@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve()
 const corsOptions = {
     
-    origin: 'http://localhost:3000', // Your frontend URL
+    origin: 'https://chat-app-t9pg.onrender.com/login', // Your frontend URL
     credentials: true, // Allow credentials (cookies, authorization headers, TLS client certificates)
   };
 dotenv.config()
