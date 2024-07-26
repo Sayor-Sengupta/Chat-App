@@ -8,7 +8,7 @@ const useSendMessage = () => {
     const sendMessage = async (message)=>{
         setLoading(true)
         try {
-            const res = await fetch(`http://localhost:5000/api/messages/send/${selectedConversation._id}`,{
+            const res = await fetch(`https://chat-app-t9pg.onrender.com/api/messages/send/${selectedConversation._id}`,{
                 method:'POST',
                 credentials:"include",
                 headers:{

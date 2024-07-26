@@ -11,7 +11,7 @@ const useGetMessage = () => {
             
             setLoading(true);
             try {
-                const res = await fetch(`http://localhost:5000/api/messages/${selectedConversation._id}`,{  credentials:"include"  });
+                const res = await fetch(`https://chat-app-t9pg.onrender.com/api/messages/${selectedConversation._id}`,{  credentials:"include"  });
                 console.log(selectedConversation._id);
                 const data = await res.json();
 
