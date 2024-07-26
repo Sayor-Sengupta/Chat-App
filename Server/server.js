@@ -8,6 +8,7 @@ import userRoutes from "./routes/userroutes.js"
 import cookieParser from "cookie-parser";
 import cors from "cors"
 import { app, server } from "./socket/socket.js";
+dotenv.config()
 const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve()
 const corsOptions = {
@@ -15,7 +16,7 @@ const corsOptions = {
     origin: 'https://chat-app-t9pg.onrender.com', // Your frontend URL
     credentials: true, // Allow credentials (cookies, authorization headers, TLS client certificates)
   };
-dotenv.config()
+
 // app.use(cors());
 app.use(cors(corsOptions));
 app.use(express.json());// to parse json , from req.body
